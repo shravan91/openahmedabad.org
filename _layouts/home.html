@@ -1,43 +1,23 @@
 ---
 layout: default
 ---
-
 <div class="home container">
   <div class="row">
     {% for post in site.posts %}
     <div class="col-md-4">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h3 class="panel-title">{{ post.title | escape }}<br/><small>{{ post.date | date: "%b %-d, %Y" }}</small></h3>
+          <h2 class="panel-title">{{ post.title | escape }}</h2>
         </div>
         <div class="panel-body">
           <span class="post-meta">{{ post.excerpt }}</span>
         </div>
         <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item"><a href="https://github.com/{{ post.repo }}">View on Github</a></li>
+          <li class="list-group-item">Contribute</li>
         </ul>
       </div>
     </div>
-
-
     {% endfor %}
-
-
-
   </div>
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
 </div>
