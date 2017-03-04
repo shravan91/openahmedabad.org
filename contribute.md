@@ -42,7 +42,10 @@ layout: post
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-default">Submit</button>
+        <div class="alert alert-danger" role="alert"><strong>Wait!</strong> This form does not work, yet.</div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="cancel" class="btn btn-default">Cancel</button>
         </div>
       </div>
     </form>
