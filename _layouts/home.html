@@ -4,6 +4,7 @@ layout: default
 <div class="home container">
   <div class="row">
     {% for post in site.posts %}
+
     <div class="col-md-4">
       <div class="panel panel-info">
         <div class="panel-heading">
@@ -19,6 +20,21 @@ layout: default
       </div>
     </div>
     {% endfor %}
+
+    <div class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h2 class="panel-title">Add a project</h2>
+        </div>
+        <div class="panel-body">
+          <span class="post-meta">Suggest a new open-data project to OpenAhmedabad.</span>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="https://github.com/DatameetAMD/bucket-list/issues">File an issue</a></li>
+          <li class="list-group-item">Contribute</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -28,7 +44,7 @@ layout: default
     <div class="row">
       <div class="col-md-6">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus mollitia nostrum excepturi, repellendus asperiores. Eligendi deleniti officiis cupiditate quam accusamus consequuntur nulla. Est neque sequi cumque, laboriosam deleniti harum impedit eveniet sunt magnam dolorem corporis. Debitis, quod!</p>
-        <p><a class="btn btn-primary btn-lg" href="/contribute" role="button">Learn more</a></p>
+        <p><a class="btn btn-success btn-lg" href="/contribute" role="button">Learn more</a></p>
       </div>
     </div>
   </div>

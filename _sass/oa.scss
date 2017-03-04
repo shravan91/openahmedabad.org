@@ -9,3 +9,14 @@ body {
 .post {
   min-height: 300px;
 }
+
+.panel-image {
+  margin-left: -15px;
+  margin-right: -15px; 
+  margin-top: -15px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
