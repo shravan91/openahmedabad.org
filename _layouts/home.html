@@ -2,16 +2,23 @@
 layout: default
 ---
 <div class="home container">
-  <div class="row">
+  <div class="row heading">
+    <div class="col-md-12"><h1>Projects<br/><small>Here are some projects which you can contribute to</small></h1></div>
+  </div>
+  
+  <div class="row projects">
     {% for post in site.posts %}
 
     <div class="col-md-4">
       <div class="panel panel-info">
-        <div class="panel-heading">
-          <h2 class="panel-title">{{ post.title | escape }}</h2>
-        </div>
+
         <div class="panel-body">
-          <span class="post-meta">{{ post.excerpt }}</span>
+          <div class="post-image">
+            <img src="/img/{{ post.slug }}.jpg" alt="">
+          </div>
+          <h3>{{ post.title | escape }}</h3>
+
+          <p class="post-meta">{{ post.excerpt }}</p>
         </div>
         <ul class="list-group">
           <li class="list-group-item"><a href="https://github.com/{{ post.repo }}">View on Github</a></li>
@@ -20,21 +27,6 @@ layout: default
       </div>
     </div>
     {% endfor %}
-
-    <div class="col-md-4">
-      <div class="panel panel-success">
-        <div class="panel-heading">
-          <h2 class="panel-title">Add a project</h2>
-        </div>
-        <div class="panel-body">
-          <span class="post-meta">Suggest a new open-data project to OpenAhmedabad.</span>
-        </div>
-        <ul class="list-group">
-          <li class="list-group-item"><a href="https://github.com/DatameetAMD/bucket-list/issues">File an issue</a></li>
-          <li class="list-group-item">Contribute</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </div>
 
